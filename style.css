@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Comfortaa", sans-serif;
+}
+
+.container{
+    
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-color{
+    
+    text-align: center;
+}
+.hex-color h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    animation: colorchange 5s infinite alternate;
+
+}
+
+.hex-color h2{
+    
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+@keyframes colorchange {
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: yellow;
+    }
+    60%{
+        color: green;
+    }
+    80%{
+        color: red;
+    }
+    100%{
+        color: green;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hex-color h1{
+        font-size: 1.5rem;
+    }
+    .hex-color h2{
+        font-size: 1.5rem;
+    }
+    
+}
